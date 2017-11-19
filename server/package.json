@@ -5,5 +5,15 @@
   "main": "index.js",
   "repository": "https://github.com/UHanczar/emaily",
   "author": "U. Hanchar according to S. Grider app",
-  "license": "MIT"
+  "license": "MIT",
+  "engines": {
+    "node": "8.1.1",
+    "npm": "5.0.3"
+  },
+  "scripts": {
+    "start": "node server/index.js"
+  },
+  "dependencies": {
+    "express": "^4.16.2"
+  }
 }
