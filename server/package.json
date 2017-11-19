@@ -1,0 +1,9 @@
+{
+  "name": "emaily_server",
+  "version": "1.0.0",
+  "description": "server side of emaily app",
+  "main": "index.js",
+  "repository": "https://github.com/UHanczar/emaily",
+  "author": "U. Hanchar according to S. Grider app",
+  "license": "MIT"
+}
