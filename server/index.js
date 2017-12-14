@@ -3,6 +3,7 @@ const mongoose = require('mongoose');
 const passport = require('passport');
 const cookieSession = require('cookie-session');
 const bodyParser = require('body-parser');
+var debug = require('debug')('http');
 
 const keys = require('./config/keys');
 require('./models/User');
@@ -34,6 +35,7 @@ if (process.env.NODE_ENV === 'production') {
   // Express will serve up the index.html file if it doesn't recognize the file
   const path = require('path');
   app.get('*', (req, res) => {
+    debug('booting %o', req.user);
     res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
   });
 }
